@@ -1,5 +1,8 @@
 export const categories = [
     "All",
+    "Trending",
+    "Programming",
+    "Javscript",
     "Lizards",
     "Complex",
     "Baby",
@@ -9,6 +12,12 @@ export const categories = [
     "Cream",
     "Shock",
     "Quit",
-    "Dash"
+    "Dash",
+    "Food",
+    "Movies",
+    "TV",
+    "Reality",
+    "Tech"
+
 
 ]

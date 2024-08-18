@@ -14,6 +14,12 @@ type VideoGridItemProps = {
 
 }
 
-export function VideoGridItem(){
+export function VideoGridItem({id, title, channel, views, postedAt, duration, thumbnailUri, videoUri}:VideoGridItemProps){
+
+    return <div className="flex flex-col gap-2">
+        <a href={`?watch?v=${id}`}>
+            
+        </a>
+    </div>
 
 }

@@ -17,7 +17,7 @@ function App() {
             <CategoryPills categories={categories} selectedCategory={selectedCategory} onSelect={setSelectedCategory}/>
           </div>
           <div className='grid gap-4 grid-cols-[repeat(auto-fill, minmax(300px,1fr))]'>
-            {videos && videos.map( video => (
+            { videos.map( video => (
                 <VideoGridItem key={video.id} {...video} />
             )
             )}

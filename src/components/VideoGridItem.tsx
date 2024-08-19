@@ -9,16 +9,19 @@ type VideoGridItemProps = {
     views: number
     postedAt: Date
     duration: number
-    thumbnailUri: string
-    videoUri: string
+    thumbnailUrl: string
+    videoUrl: string
 
 }
 
-export function VideoGridItem({id, title, channel, views, postedAt, duration, thumbnailUri, videoUri}:VideoGridItemProps){
+export function VideoGridItem({id, title, channel, views, postedAt, duration, thumbnailUrl, videoUrl}:VideoGridItemProps){
 
     return <div className="flex flex-col gap-2">
         <a href={`?watch?v=${id}`}>
-            
+            <img src={thumbnailUrl} className="block w-full h-full object-cover rounded-xl" />
+            <div className="absolute bottom-1 right-1 bg-secondary-dark text-secondary text-sm px-.5 rounded">
+                {duration}
+            </div>
         </a>
     </div>
 
